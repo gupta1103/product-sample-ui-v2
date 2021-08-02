@@ -29,37 +29,6 @@ class ViewController: UIViewController {
              self.tableView.reloadData()
          }
     }
-    
-//    func fetchProductDetails(completion: @escaping (ProductModel?) -> Void) {
-//
-//        let urlString = "https://www.blibli.com/backend/search/products?searchTerm=Samsung"
-//        let url = URL(string: urlString)
-//        let task = URLSession.shared.dataTask(with: url!) { data, response, error in
-//                if error != nil {
-//                    print(error?.localizedDescription)
-//                    return
-//                }
-//
-//            do {
-//                let result = try JSONDecoder().decode(ProductModel.self, from: data!)
-//
-//                if let productArray = result.data?.products {
-//
-//                    DispatchQueue.main.async {
-//                        self.productDetail = productArray
-//                        print(self.productDetail)
-//                        self.tableView.reloadData()
-//                    }
-//                }
-//                completion(nil)
-//            }
-//            catch {
-//                completion(nil)
-//            }
-//
-//        }
-//        task.resume()
-//    }
 }
 
 extension ViewController {
